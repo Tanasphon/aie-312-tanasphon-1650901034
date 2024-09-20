@@ -1,24 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanasphon</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1650901034</title>
+        
+        <style>
+            body {
+            background-image: url('https://images.wallpapersden.com/image/download/glowing-outer-space-4k-galaxy_bmVubmqUmZqaraWkpJRoZWxnrWdlaW0.jpg');
+            background-size: cover; /* Makes the image cover the entire area */
+            background-position: center; /* Centers the image */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Makes body height equal to viewport height */
+        }
+        
+        .rounded-box {
+            width: calc(100vw - 50px); /* Adjust for left and right margins */
+            max-width: 2000px; /* Max width */
+            height: calc(100vh - 60px); /* Adjust for top and bottom margins */
+            max-height: 900px; /* Max height */
+            background-color: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end; /* Aligns items to the bottom */
+            margin: 30px; /* Margin around the box */
+            color: white;
+            font-size: 30px;
+            border: 2px solid black;
+            position: relative; /* Relative positioning */
+            flex-direction: column; /* Column layout */
+        }
+        
+        
+        .head-box {
+            width: 200px; /* กำหนดความกว้าง */
+            height: 150px; /* กำหนดความสูง */
+            background-size: cover; /* ทำให้ภาพครอบคลุมทั้งกล่อง */
+            background-position: center; /* จัดตำแหน่งภาพที่กลาง */
+            border-radius: 40px; /* โค้งมนมุม */
+            border: 2px solid black; /* เส้นขอบ */
+            display: flex; /* ใช้ flexbox */
+            justify-content: center; /* จัดให้ข้อความอยู่กลางแนวนอน */
+            align-items: center; /* จัดให้ข้อความอยู่กลางแนวตั้ง */
+            color: white; /* สีข้อความ */
+            font-size: 20px; /* ขนาดข้อความ */
+            margin: 10px; /* ระยะห่างรอบตัวกล่อง */
+
+
+        }
+        
+        .inside-top-box {
+            width: 1300px;
+            height: 50px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 10px 10px 0; /* Top and side margin */
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/020/056/186/small_2x/abstract-space-background-from-the-galaxy-and-bright-glowing-stars-and-constellations-4k-free-video.jpg');
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }   
+        
+        .inside-mid-box {
+    width: 1300px;
+    height: 650px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px 10px 0; /* Top and side margin */
+    background-image: url('https://wallpapercave.com/wp/wp4247401.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: space-evenly;
+    background-size: cover; /* Makes the image cover the area */
+    background-position: center; /* Centers the image */
+    padding: 10px; /* Add padding to create space inside the box */
+}
+
+        
+        .inside-bot-box {
+            width: 1300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 10px; /* Margin around the box */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCLK7jnzeb3iCUn4ANyqPT3WD37HyPiPgRwQ&s');
+            background-size: cover; /* Makes the image cover the area */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        h1 {
+            text-align: center;
+            color: rgba(255, 255, 255);
+            font-size: 35px;
+            text-shadow: 
+                -1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black; /* สร้างเส้นขอบ */
+        }
+        h2 {
+            text-align: center;
+            color: rgba(255, 255, 255);
+            font-size: 35px;
+            text-shadow: 
+                -1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black; /* สร้างเส้นขอบ */
+        }
+        h3 {
+            text-align: center;
+            color: rgba(255, 255, 255);
+            font-size: 35px;
+            text-shadow: 
+                -1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black; /* สร้างเส้นขอบ */
+        }
+        </style>
 </head>
-<body style="background-image:url('https://www.wonderplugin.com/wp-content/uploads/2013/12/Evening_1024.jpg');background-position: center;
-background-repeat: no-repeat;background-size: cover; ">
-    <header>
-        <h1>Tanasphon Angthong</h1>
-        <h2>Student ID : 1650901034 </h2>
-        <h3>Email : tanasphon.angt@bumail.net</h3>
-        <div class="container">
-            <div class="item-0"></div>
-            <div class="item-1"></div>
-            <div class="item-2"></div>
+<body>
+    <div class="rounded-box">
+        <div class="inside-top-box">
+            <h1>1650901034 Tanasphon Angthong</h1>
         </div>
-        <img src="https://media.tenor.com/2l4-h42qnmcAAAAi/toothless-dancing-toothless.gif"/><br/>
-        <audio controls autoplay="true" source src="Pokemon_Black_White_Music_Driftveil_City_Music_[_YouConvert.net_].mp3" type="audio/ogg"></audio>
-    </header>
+        <div class="inside-mid-box">
+            <h2>"However difficult life may seem, there is always something you can do and succeed at. It matters that you don’t just give up."</h2>
+            <h3>Stephen Hawking</h3>
+        </div>
+        <div class="inside-bot-box">
+            <div class="head-box"> 
+                <a href="https://www.instagram.com/captan20_04?igsh=MTRsczBtaTEyMjVtYQ==" target="_blank">
+                    <div class="head-box" style="background-image: url('https://www.rainmaker.in.th/wp-content/uploads/2019/10/Screen-Shot-2562-10-15-at-01.55.19.png');"></div>
+                </a>
+            </div>            
+            <div class="head-box">
+                <a href="https://www.roblox.com/users/120589481/profile" target="_blank">
+                    <div class="head-box" style="background-image: url('https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht=w240-h480-rw');"></div>
+                </a>
+            </div>
+            <div class="head-box">
+                <a href="https://mobalytics.gg/lol/profile/th/exsword-9316/overview" target="_blank">
+                    <div class="head-box" style="background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/0/07/League_of_Legends_icon.png/revision/latest/scale-to-width/360?cb=20191018194326');"></div>
+                </a>
+            </div>
+            <div class="head-box">
+                <a href="https://steamcommunity.com/id/m12m200/" target="_blank">
+                    <div class="head-box" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvuKJiVA1-WtJ81X8FDVFIsBQXGWzzxqzuA&s');"></div>
+                </a>
+            </div>
+            <div class="head-box">
+                <a href="https://www.facebook.com/share/2U54pzxCKwWPWSk3/?mibextid=qi2Omg" target="_blank">
+                    <div class="head-box" style="background-image: url('https://bodytrac.com/wp-content/uploads/2017/10/facebook-icon-large-300x300.png');"></div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
